@@ -1,5 +1,6 @@
-node_modules/
-.env
-.netlify/
-*.log
-iks.http
+[build]
+  functions = "netlify/functions"
+  publish = "public"
+
+[functions]
+  node_bundler = "esbuild"
