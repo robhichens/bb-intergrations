@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bright Beginnings Preschool — Charlottesville’s Family-Owned Preschool Since 1984</title>
+<meta name="description" content="Bright Beginnings Preschool — family-owned since 1984, with three Charlottesville-area schools in Forest Lakes, Mill Creek, and Crozet. Voted #1 Preschool &amp; Daycare in Charlottesville. Schedule a tour today.">
+<meta name="theme-color" content="#1E3A2F">
+<meta property="og:title" content="Bright Beginnings Preschool — Charlottesville">
+<meta property="og:description" content="Forty years of little firsts. Three neighborhood schools. Schedule a tour.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+/* ============ Tokens ============ */
+:root{
+  --pine:#1E3A2F;        /* primary / headers / footer */
+  --pine-deep:#142922;   /* button text on coral, footer base */
+  --pine-soft:#2E5243;
+  --pine-mist:#4A7263;   /* eyebrows, quiet accents — AA on cream */
+  --coral:#F2705B;       /* CTAs + delight only */
+  --coral-deep:#D85A44;
+  --coral-soft:#F9A893;
+  --coral-whisper:#FBE3D8;
+  --gold:#C9A227;        /* awards, flourishes — dark backgrounds only */
+  --gold-soft:#E8C766;
+  --gold-bark:#8A6B3F;   /* twigs, trunks, shelves */
+  --cream:#FAF6EF;
+  --cream-deep:#F1E8D8;
+  --cream-card:#FFFDF8;
+  --ink:#2B2B2B;
+  --ink-soft:#53504A;
+  --serif:"Fraunces",Georgia,"Times New Roman",serif;
+  --sans:"Nunito Sans",-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --radius:16px;
+  --shadow:0 2px 8px rgba(30,58,47,.07),0 14px 34px rgba(30,58,47,.08);
+  --container:1120px;
+}
+
+/* ============ Base ============ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  font-family:var(--sans);
+  font-size:1.0625rem;
+  line-height:1.7;
+  color:var(--ink);
+  background:var(--cream);
+  -webkit-font-smoothing:antialiased;
+}
+img,svg{display:block;max-width:100%}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.15;color:var(--pine);text-wrap:balance}
+p{max-width:62ch}
+a{color:var(--pine);text-decoration-color:var(--coral-soft);text-decoration-thickness:2px;text-underline-offset:3px}
+a:hover{text-decoration-color:var(--coral)}
+:focus-visible{outline:3px solid var(--pine);outline-offset:3px;border-radius:4px}
+.on-pine :focus-visible{outline-color:var(--gold-soft)}
+.skip-link{
+  position:absolute;left:1rem;top:-4rem;z-index:200;
+  background:var(--pine);color:var(--cream);padding:.6rem 1.2rem;border-radius:8px;
+  font-weight:700;text-decoration:none;transition:top .15s ease;
+}
+.skip-link:focus{top:1rem}
+.container{max-width:var(--container);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,2.5rem)}
+section{padding-block:clamp(3.5rem,8vw,6.5rem)}
+.eyebrow{
+  font-size:.8125rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--pine-mist);margin-bottom:.75rem;
+}
+.section-head{max-width:640px;margin-bottom:clamp(2rem,5vw,3.25rem)}
+.section-head h2{font-size:clamp(1.85rem,3.6vw,2.6rem);margin-bottom:.6rem}
+.section-head p{color:var(--ink-soft)}
+
+/* Buttons */
+.btn{
+  display:inline-flex;align-items:center;gap:.5rem;white-space:nowrap;
+  font-family:var(--sans);font-weight:700;font-size:1rem;
+  padding:.85rem 1.6rem;border-radius:999px;text-decoration:none;
+  transition:transform .15s ease,background-color .15s ease,box-shadow .15s ease;
+}
+.btn-coral{background:var(--coral);color:var(--pine-deep);box-shadow:0 4px 14px rgba(242,112,91,.35)}
+.btn-coral:hover{background:var(--coral-deep);transform:translateY(-2px)}
+.btn-ghost{color:var(--pine);box-shadow:inset 0 0 0 2px var(--pine)}
+.btn-ghost:hover{background:var(--pine);color:var(--cream);transform:translateY(-2px)}
+.btn-ghost.on-dark{color:var(--cream);box-shadow:inset 0 0 0 2px rgba(250,246,239,.6)}
+.btn-ghost.on-dark:hover{background:var(--cream);color:var(--pine)}
+
+/* Squiggle underline */
+.squig{position:relative;display:inline-block;white-space:nowrap}
+.squig .squig-line{position:absolute;left:0;right:0;bottom:-.28em;width:100%;height:.32em;overflow:visible}
+
+/* ============ Header ============ */
+.site-header{
+  position:sticky;top:0;z-index:100;
+  background:rgba(250,246,239,.93);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(30,58,47,.12);
+}
+.header-inner{display:flex;align-items:center;gap:1.25rem;min-height:84px}
+.wordmark{display:flex;align-items:center;text-decoration:none;margin-right:auto}
+.logo-img{width:208px;height:auto;display:block}
+.site-nav ul{display:flex;gap:1.5rem;list-style:none}
+.site-nav a{font-weight:700;font-size:.95rem;text-decoration:none;color:var(--pine);padding:.35rem 0;border-bottom:2px solid transparent}
+.site-nav a:hover{border-bottom-color:var(--coral)}
+.header-cta{padding:.65rem 1.25rem;font-size:.95rem}
+.nav-toggle{
+  display:none;background:none;border:2px solid var(--pine);border-radius:10px;
+  width:44px;height:44px;cursor:pointer;color:var(--pine);
+  align-items:center;justify-content:center;flex:none;
+}
+@media (max-width:920px){
+  .site-nav{
+    position:absolute;top:100%;left:0;right:0;
+    background:var(--cream);border-bottom:1px solid rgba(30,58,47,.15);
+    box-shadow:0 18px 30px rgba(30,58,47,.12);
+    display:none;padding:1rem clamp(1.25rem,4vw,2.5rem) 1.5rem;
+  }
+  .nav-open .site-nav{display:block}
+  .site-nav ul{flex-direction:column;gap:.25rem}
+  .site-nav a{display:block;padding:.65rem 0;font-size:1.05rem}
+  .nav-toggle{display:inline-flex}
+  .header-cta{margin-left:auto}
+  .wordmark{margin-right:0}
+  .header-inner{justify-content:space-between}
+}
+.header-cta .cta-short{display:none}
+@media (max-width:600px){
+  .header-inner{gap:.55rem;min-height:64px}
+  .logo-img{width:148px}
+  .header-cta{padding:.5rem .8rem;font-size:.82rem}
+  .header-cta .cta-long{display:none}
+  .header-cta .cta-short{display:inline}
+  .nav-toggle{width:40px;height:40px}
+}
+
+/* ============ Hero ============ */
+.hero{padding-block:clamp(3rem,7vw,5.5rem) clamp(3rem,7vw,5rem);overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+@media (max-width:880px){.hero-grid{grid-template-columns:1fr}}
+.pill{
+  display:inline-flex;align-items:center;gap:.5rem;
+  background:var(--coral-whisper);color:var(--pine-deep);
+  border:1.5px solid var(--coral);
+  font-weight:700;font-size:.85rem;letter-spacing:.04em;
+  padding:.4rem 1rem;border-radius:999px;margin-bottom:1.4rem;
+}
+.pill .dot{width:9px;height:9px;border-radius:50%;background:var(--coral);flex:none}
+.hero h1{font-size:clamp(2.5rem,5.6vw,4.1rem);margin-bottom:1.2rem}
+.hero-sub{font-size:1.15rem;color:var(--ink-soft);margin-bottom:2rem}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:.9rem}
+.perch{position:relative;display:inline-block}
+.hero-bird{position:absolute;right:-.18em;top:-.92em;width:clamp(40px,5vw,58px);height:auto}
+@keyframes hop{
+  0%{transform:none}
+  28%{transform:translateY(-13px) rotate(-6deg)}
+  52%{transform:translateY(0) rotate(0)}
+  68%{transform:translateY(-6px) rotate(-3deg)}
+  84%{transform:translateY(0) rotate(0)}
+  100%{transform:none}
+}
+.hero-bird{animation:hop .95s cubic-bezier(.34,1.4,.5,1) .7s 1 both}
+@keyframes beat{0%,100%{transform:scale(1)}30%{transform:scale(1.3)}55%{transform:scale(1)}75%{transform:scale(1.18)}}
+.hero-bird .heart{transform-box:fill-box;transform-origin:center;animation:beat .8s ease-in-out 1.8s 2}
+
+/* ============ Trust strip ============ */
+.trust{background:var(--pine);color:var(--cream);padding-block:1.1rem}
+.trust ul{
+  list-style:none;display:flex;flex-wrap:wrap;justify-content:center;
+  gap:.4rem 0;align-items:center;text-align:center;
+}
+.trust li{display:flex;align-items:center;font-weight:600;font-size:.95rem;letter-spacing:.01em}
+.trust li+li::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--gold);margin-inline:1.1rem;flex:none}
+.trust .award-ic{width:18px;height:22px;margin-right:.55rem;flex:none}
+
+/* ============ Generic split ============ */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+@media (max-width:880px){.split{grid-template-columns:1fr}}
+
+/* ============ Programs ============ */
+.programs{background:var(--cream-deep)}
+.prog-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem}
+@media (max-width:1020px){.prog-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.prog-grid{grid-template-columns:1fr}}
+.prog-card{
+  background:var(--cream-card);border-radius:var(--radius);padding:1.5rem 1.4rem 1.4rem;
+  box-shadow:var(--shadow);border-top:4px solid var(--pine-mist);
+  transition:transform .18s ease,box-shadow .18s ease;
+}
+.prog-card:hover{transform:translateY(-4px);box-shadow:0 6px 14px rgba(30,58,47,.1),0 20px 40px rgba(30,58,47,.12)}
+.prog-card .spot{width:58px;height:58px;margin-bottom:.9rem}
+.prog-card h3{font-size:1.2rem;margin-bottom:.15rem}
+.prog-card .age{font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--pine-mist);display:block;margin-bottom:.55rem}
+.prog-card p{font-size:.95rem;color:var(--ink-soft);line-height:1.6}
+.prog-more{margin-top:2.25rem;text-align:center}
+.prog-more a{font-weight:700}
+
+/* ============ Locations ============ */
+.loc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+@media (max-width:980px){.loc-grid{grid-template-columns:1fr;max-width:520px;margin-inline:auto}}
+.loc-card{
+  background:var(--cream-card);border-radius:var(--radius);overflow:hidden;
+  box-shadow:var(--shadow);display:flex;flex-direction:column;
+}
+.loc-card .img-slot{border-radius:0}
+.loc-body{padding:1.1rem 1.6rem 1.8rem;display:flex;flex-direction:column;flex:1}
+.loc-nest{width:118px;height:34px;margin:-1.45rem auto .35rem;position:relative;z-index:2}
+.loc-body h3{font-size:1.45rem;text-align:center;margin-bottom:.9rem}
+.loc-body address{font-style:normal;color:var(--ink-soft);font-size:.97rem;line-height:1.8;text-align:center}
+.loc-body address a{display:inline-block}
+.loc-body .addr-lines{margin-bottom:.5rem}
+
+/* ============ Testimonials ============ */
+.testimonials{background:var(--cream)}
+.quote-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+@media (max-width:780px){.quote-grid{grid-template-columns:1fr}}
+.quote-card{
+  background:var(--cream-card);border-radius:var(--radius);box-shadow:var(--shadow);
+  padding:1.9rem 1.9rem 1.6rem;position:relative;
+}
+.quote-card .wingmark{width:46px;height:27px;margin-bottom:.9rem}
+.quote-card p{font-family:var(--serif);font-size:1.14rem;line-height:1.55;color:var(--pine);font-weight:500}
+.quote-card footer{margin-top:1rem;font-weight:700;font-size:.92rem;color:var(--pine-mist)}
+.quote-card footer::before{content:"— "}
+
+/* ============ Guarantee ============ */
+.guarantee{background:var(--cream-deep)}
+.guar-badge{width:74px;height:92px;margin-bottom:1.25rem}
+.guarantee h2{font-size:clamp(1.8rem,3.4vw,2.4rem);margin-bottom:.9rem}
+.guarantee p{color:var(--ink-soft);margin-bottom:1.5rem}
+.guar-link{font-weight:700}
+
+/* ============ Final CTA ============ */
+.final-cta{background:var(--pine);color:var(--cream);text-align:center}
+.final-cta h2{color:var(--cream);font-size:clamp(2rem,4.4vw,3rem);margin-bottom:1rem}
+.final-cta p{color:rgba(250,246,239,.85);margin-inline:auto;margin-bottom:2.2rem;max-width:54ch}
+.final-cta .estbird{display:block;width:130px;height:auto;margin:0 auto 1.6rem}
+.threebirds{width:175px;height:auto;margin-top:1.2rem}
+.final-cta .cta-row{display:flex;flex-wrap:wrap;gap:.9rem;justify-content:center}
+
+/* ============ Footer ============ */
+.site-footer{background:var(--pine-deep);color:rgba(250,246,239,.82);font-size:.95rem}
+.footer-grid{
+  display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:2.5rem;
+  padding-block:3.5rem 2.5rem;
+}
+@media (max-width:880px){.footer-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:540px){.footer-grid{grid-template-columns:1fr}}
+.site-footer h3{color:var(--cream);font-size:1.05rem;margin-bottom:.8rem}
+.site-footer a{color:var(--cream);text-decoration-color:rgba(232,199,102,.5)}
+.site-footer a:hover{text-decoration-color:var(--gold-soft)}
+.logo-img-footer{width:230px}
+.footer-brand p{margin-top:1.1rem;line-height:1.65;max-width:30ch}
+.footer-loc address{font-style:normal;line-height:1.85}
+.social{display:flex;gap:.8rem;margin-top:1.2rem;list-style:none}
+.social a{
+  display:inline-flex;width:40px;height:40px;border-radius:50%;
+  border:1.5px solid rgba(250,246,239,.35);align-items:center;justify-content:center;
+}
+.social a:hover{border-color:var(--gold-soft);background:rgba(232,199,102,.12)}
+.social svg{width:18px;height:18px;fill:var(--cream)}
+.footer-bottom{
+  border-top:1px solid rgba(250,246,239,.15);
+  padding-block:1.4rem;display:flex;flex-wrap:wrap;gap:.5rem 2rem;
+  justify-content:space-between;align-items:center;
+}
+
+/* ============ Illustrated image slots + tooltips ============ */
+.img-slot{
+  position:relative;border-radius:var(--radius);overflow:hidden;
+  box-shadow:var(--shadow);cursor:help;
+}
+.img-slot svg.scene{width:100%;height:auto}
+.img-tip{
+  position:absolute;left:50%;bottom:16px;z-index:5;
+  transform:translate(-50%,8px);
+  width:max-content;max-width:min(88%,340px);
+  background:var(--cream-card);border:2px solid var(--coral);border-radius:12px;
+  padding:.6rem .9rem;font-size:.83rem;line-height:1.5;color:var(--ink);
+  font-family:var(--sans);font-weight:600;
+  box-shadow:0 8px 24px rgba(30,58,47,.22);
+  opacity:0;visibility:hidden;pointer-events:none;
+  transition:opacity .15s ease,transform .15s ease,visibility .15s;
+}
+.img-tip .cam{margin-right:.35rem}
+.img-slot:hover .img-tip,
+.img-slot:focus-visible .img-tip,
+.img-slot.tip-open .img-tip{opacity:1;visibility:visible;transform:translate(-50%,0)}
+
+/* ============ Dividers ============ */
+.divider{display:flex;justify-content:center;padding-block:.25rem}
+.divider svg{width:240px;height:44px}
+
+/* ============ Scroll reveal ============ */
+.js .reveal{opacity:0;transform:translateY(16px);transition:opacity .2s ease,transform .2s ease}
+.js .reveal.in{opacity:1;transform:none}
+
+/* ============ Reduced motion ============ */
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important}
+  .js .reveal{opacity:1;transform:none}
+  .hero-bird,.hero-bird .wing{animation:none}
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- Shared SVG symbols -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <!-- Brand "Birdie": heart-bellied bird redrawn from the official brand elements, in site colors -->
+    <symbol id="bird" viewBox="0 0 64 56">
+      <g fill="var(--bird-body,var(--coral))">
+        <circle cx="33" cy="25" r="19"/>
+        <polygon points="50,19 60,23 50,27"/>
+        <path d="M26 41 Q14 47 4 44 Q9 37 17 33 Q20 38 26 41 Z"/>
+        <ellipse cx="7" cy="27" rx="7" ry="3.6" transform="rotate(-52 7 27)"/>
+        <ellipse cx="14" cy="21" rx="7" ry="3.6" transform="rotate(-16 14 21)"/>
+      </g>
+      <circle cx="41" cy="17" r="2.6" fill="var(--bird-heart,#FFFDF8)"/>
+      <path class="heart" d="M32 37 C26.5 31.5 23.5 28.5 23.5 24.5 C23.5 21 26 19 28.5 19 C30 19 31.5 20 32 21.5 C32.5 20 34 19 35.5 19 C38 19 40.5 21 40.5 24.5 C40.5 28.5 37.5 31.5 32 37 Z" fill="var(--bird-heart,#FFFDF8)"/>
+      <g stroke="var(--bird-body,var(--coral))" stroke-width="2" stroke-linecap="round" fill="none">
+        <path d="M29 44 V52 M29 52 L25.5 55 M29 52 L32 55.5"/>
+        <path d="M37 44 V52 M37 52 L33.5 55 M37 52 L40 55.5"/>
+      </g>
+    </symbol>
+    <!-- Brand spiral sun -->
+    <symbol id="sun" viewBox="0 0 80 80">
+      <polygon fill="var(--sun-body,#E8C766)" points="78,40 63.2,46.2 72.9,59 57,57 59,72.9 46.2,63.2 40,78 33.8,63.2 21,72.9 23,57 7.1,59 16.8,46.2 2,40 16.8,33.8 7.1,21 23,23 21,7.1 33.8,16.8 40,2 46.2,16.8 59,7.1 57,23 72.9,21 63.2,33.8"/>
+      <path d="M40 40 a4 4 0 0 1 8 0 a8 8 0 0 1 -16 0 a12.5 12.5 0 0 1 25 0" fill="none" stroke="var(--sun-core,#F6EDDC)" stroke-width="4.5" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="nest" viewBox="0 0 140 44">
+      <ellipse cx="62" cy="13" rx="7" ry="9" fill="#FFF9EE" stroke="#DECFAF" stroke-width="1.5"/>
+      <ellipse cx="78" cy="13" rx="7" ry="9" fill="#FFF9EE" stroke="#DECFAF" stroke-width="1.5"/>
+      <path d="M8 8 Q70 54 132 8" fill="none" stroke="var(--gold-bark)" stroke-width="3.5" stroke-linecap="round"/>
+      <path d="M18 5 Q70 42 122 6" fill="none" stroke="var(--gold)" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M28 11 Q70 38 112 11" fill="none" stroke="var(--pine-mist)" stroke-width="2" stroke-linecap="round"/>
+      <path d="M10 14 L22 10 M130 14 L118 10 M40 22 L50 18 M100 22 L90 18" stroke="var(--gold-bark)" stroke-width="1.8" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="wingmark" viewBox="0 0 48 28">
+      <path d="M3 25 Q7 5 26 4 Q15 10 12 25 Z" fill="var(--coral-soft)"/>
+      <path d="M20 25 Q25 8 42 7 Q31 12 28 25 Z" fill="var(--coral)"/>
+    </symbol>
+    <symbol id="award" viewBox="0 0 64 84">
+      <polygon points="22,42 14,76 26,67 32,78 38,67 50,76 42,42" fill="var(--coral-deep)"/>
+      <circle cx="32" cy="27" r="23" fill="var(--gold)"/>
+      <circle cx="32" cy="27" r="17.5" fill="none" stroke="#FFF6DF" stroke-width="2"/>
+      <path d="M32 15 l3.7 7.5 8.3 1.2 -6 5.9 1.4 8.2 -7.4 -3.9 -7.4 3.9 1.4 -8.2 -6 -5.9 8.3 -1.2 Z" fill="#FFF6DF"/>
+    </symbol>
+    <symbol id="birdline" viewBox="0 0 240 44">
+      <line x1="4" y1="33" x2="92" y2="33" stroke="var(--pine-mist)" stroke-width="2" stroke-linecap="round"/>
+      <line x1="148" y1="33" x2="236" y2="33" stroke="var(--pine-mist)" stroke-width="2" stroke-linecap="round"/>
+      <use href="#bird" x="98" y="-6" width="44" height="38.5"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="wordmark" href="/">
+      <img class="logo-img" src="assets/bb-logo-fullcolor.png" alt="Bright Beginnings Preschool — Est. 1984">
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <svg width="22" height="16" viewBox="0 0 22 16" aria-hidden="true"><path d="M1 1h20M1 8h20M1 15h20" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/programs/">Programs</a></li>
+        <li><a href="/admissions/">Admissions</a></li>
+        <li><a href="/careers/">Careers</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-coral header-cta" href="https://brightbeginnings.iks.center/webform/1183842434473334550"><span class="cta-long">Schedule a Tour</span><span class="cta-short">Book a Tour</span></a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" aria-labelledby="hero-heading">
+    <div class="container hero-grid">
+      <div>
+        <p class="pill"><span class="dot" aria-hidden="true"></span>Enrolling now at all three schools</p>
+        <h1 id="hero-heading">Forty years of
+          <span class="perch squig">little&nbsp;firsts<svg class="hero-bird" viewBox="0 0 64 56" aria-hidden="true">
+            <g fill="var(--coral)">
+              <circle cx="33" cy="25" r="19"/>
+              <polygon points="50,19 60,23 50,27"/>
+              <path d="M26 41 Q14 47 4 44 Q9 37 17 33 Q20 38 26 41 Z"/>
+              <ellipse cx="7" cy="27" rx="7" ry="3.6" transform="rotate(-52 7 27)"/>
+              <ellipse cx="14" cy="21" rx="7" ry="3.6" transform="rotate(-16 14 21)"/>
+            </g>
+            <circle cx="41" cy="17" r="2.6" fill="#FFFDF8"/>
+            <path class="heart" d="M32 37 C26.5 31.5 23.5 28.5 23.5 24.5 C23.5 21 26 19 28.5 19 C30 19 31.5 20 32 21.5 C32.5 20 34 19 35.5 19 C38 19 40.5 21 40.5 24.5 C40.5 28.5 37.5 31.5 32 37 Z" fill="#FFFDF8"/>
+            <g stroke="var(--coral)" stroke-width="2" stroke-linecap="round" fill="none">
+              <path d="M29 44 V52 M29 52 L25.5 55 M29 52 L32 55.5"/>
+              <path d="M37 44 V52 M37 52 L33.5 55 M37 52 L40 55.5"/>
+            </g>
+          </svg><svg class="squig-line" viewBox="0 0 220 14" preserveAspectRatio="none" aria-hidden="true"><path d="M3 9 C30 3 55 12 82 7 S140 3 165 8 S205 6 217 5" fill="none" stroke="var(--coral)" stroke-width="5" stroke-linecap="round"/></svg></span>.
+        </h1>
+        <p class="hero-sub">First steps. First friends. First day of school. Since 1984, Charlottesville families have trusted Bright Beginnings with all of them — at three neighborhood schools where teachers stay for decades and siblings follow siblings.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-coral" href="https://brightbeginnings.iks.center/webform/1183842434473334550">Schedule a Tour</a>
+          <a class="btn btn-ghost" href="#programs">Explore Programs</a>
+        </div>
+      </div>
+
+      <!-- IMAGE SLOT: Hero — children playing outdoors -->
+      <figure class="img-slot" tabindex="0">
+        <svg class="scene" viewBox="0 0 800 500" role="img" aria-label="Illustration of a soft sunrise over Charlottesville rooftops in pine and coral tones, with birds flying">
+          <rect width="800" height="500" fill="#F6EDDC"/>
+          <circle cx="560" cy="190" r="160" fill="#FBE3D8"/>
+          <circle cx="560" cy="190" r="112" fill="#F9D2C2"/>
+          <use href="#sun" x="490" y="120" width="140" height="140"/>
+          <path d="M0 330 Q210 252 430 318 T800 300 L800 500 L0 500 Z" fill="#A9C0B2"/>
+          <path d="M0 372 Q260 312 520 360 T800 350 L800 500 L0 500 Z" fill="#7FA08F"/>
+          <!-- rooftop row -->
+          <g>
+            <rect x="80" y="368" width="78" height="64" fill="#2E5243"/>
+            <polygon points="70,368 168,368 119,326" fill="#1E3A2F"/>
+            <rect x="104" y="388" width="14" height="16" fill="#E8C766"/>
+            <rect x="130" y="388" width="14" height="16" fill="#E8C766"/>
+            <rect x="208" y="350" width="92" height="82" fill="#1E3A2F"/>
+            <polygon points="196,350 312,350 254,300" fill="#2E5243"/>
+            <rect x="228" y="372" width="15" height="18" fill="#E8C766"/>
+            <rect x="262" y="372" width="15" height="18" fill="#E8C766"/>
+            <rect x="241" y="400" width="22" height="32" fill="#F2705B"/>
+            <rect x="248" y="288" width="12" height="26" fill="#1E3A2F"/>
+            <rect x="350" y="378" width="70" height="54" fill="#2E5243"/>
+            <polygon points="340,378 430,378 385,338" fill="#1E3A2F"/>
+            <rect x="372" y="394" width="13" height="15" fill="#E8C766"/>
+            <rect x="466" y="360" width="86" height="72" fill="#1E3A2F"/>
+            <polygon points="454,360 564,360 509,314" fill="#2E5243"/>
+            <rect x="486" y="382" width="14" height="17" fill="#E8C766"/>
+            <rect x="518" y="382" width="14" height="17" fill="#E8C766"/>
+            <rect x="606" y="374" width="74" height="58" fill="#2E5243"/>
+            <polygon points="596,374 690,374 643,332" fill="#1E3A2F"/>
+            <rect x="630" y="392" width="14" height="16" fill="#E8C766"/>
+          </g>
+          <!-- brand dot-foliage trees -->
+          <rect x="42" y="396" width="10" height="36" fill="#8A6B3F"/>
+          <circle cx="47" cy="374" r="12" fill="#F2705B"/>
+          <circle cx="31" cy="386" r="9" fill="#E8C766"/>
+          <circle cx="63" cy="386" r="9" fill="#E8C766"/>
+          <circle cx="47" cy="396" r="7" fill="#F2705B"/>
+          <circle cx="24" cy="372" r="4" fill="#E8C766"/>
+          <circle cx="68" cy="370" r="4" fill="#F2705B"/>
+          <rect x="724" y="390" width="10" height="42" fill="#8A6B3F"/>
+          <circle cx="729" cy="360" r="14" fill="#F2705B"/>
+          <circle cx="709" cy="376" r="10" fill="#E8C766"/>
+          <circle cx="749" cy="376" r="10" fill="#E8C766"/>
+          <circle cx="729" cy="390" r="8" fill="#F2705B"/>
+          <circle cx="700" cy="358" r="4.5" fill="#E8C766"/>
+          <circle cx="756" cy="358" r="4.5" fill="#F2705B"/>
+          <!-- meadow -->
+          <path d="M0 432 Q400 404 800 436 L800 500 L0 500 Z" fill="#8FB3A0"/>
+          <circle cx="150" cy="462" r="5" fill="#F2705B"/><circle cx="320" cy="472" r="5" fill="#E8C766"/>
+          <circle cx="492" cy="466" r="5" fill="#F2705B"/><circle cx="650" cy="474" r="5" fill="#E8C766"/>
+          <!-- flying birds -->
+          <path d="M120 130 q10 -12 20 0 q10 -12 20 0" fill="none" stroke="#1E3A2F" stroke-width="4" stroke-linecap="round"/>
+          <path d="M210 175 q8 -10 16 0 q8 -10 16 0" fill="none" stroke="#2E5243" stroke-width="3.5" stroke-linecap="round"/>
+          <path d="M680 120 q8 -10 16 0 q8 -10 16 0" fill="none" stroke="#2E5243" stroke-width="3.5" stroke-linecap="round"/>
+          <!-- perched bird on closest roof -->
+          <use href="#bird" x="234" y="262" width="46" height="40"/>
+        </svg>
+        <figcaption class="img-tip" role="tooltip"><span class="cam" aria-hidden="true">📷</span>Replace with: wide hero photo — children playing outdoors, ~1600×900, golden-hour light.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ TRUST STRIP ============ -->
+  <div class="trust on-pine" role="region" aria-label="Why families choose us">
+    <div class="container">
+      <ul>
+        <li><svg class="award-ic" viewBox="0 0 64 84" aria-hidden="true"><use href="#award"/></svg>Voted #1 Preschool &amp; Daycare in Charlottesville</li>
+        <li>Family-owned since 1984</li>
+        <li>Three neighborhood locations</li>
+        <li>Award-winning teachers</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============ MISSION ============ -->
+  <section aria-labelledby="mission-heading">
+    <div class="container split">
+      <div class="reveal">
+        <p class="eyebrow">Our promise</p>
+        <h2 id="mission-heading" style="font-size:clamp(1.85rem,3.6vw,2.6rem);margin-bottom:1rem">Every child, at <span class="squig">their own pace<svg class="squig-line" viewBox="0 0 220 14" preserveAspectRatio="none" aria-hidden="true"><path d="M3 9 C30 3 55 12 82 7 S140 3 165 8 S205 6 217 5" fill="none" stroke="var(--coral)" stroke-width="5" stroke-linecap="round"/></svg></span>.</h2>
+        <p style="margin-bottom:1rem">Our mission has fit on one page since 1984, and it still does: give children a safe, nurturing, genuinely engaging place to grow — and stand beside the family raising them.</p>
+        <p>Every child develops at their own rate. Our job is to know your child well enough to see that pace, cheer it on, and have them walking into kindergarten ready — confident, curious, and waving goodbye without looking back. (You're allowed to look back. Most parents do.)</p>
+      </div>
+
+      <!-- IMAGE SLOT: Classroom interior -->
+      <figure class="img-slot reveal" tabindex="0">
+        <svg class="scene" viewBox="0 0 400 260" role="img" aria-label="Illustration of a bright preschool classroom with a bookshelf, easel, reading rug, and sunny window">
+          <rect width="400" height="260" fill="#FBF3E4"/>
+          <rect y="192" width="400" height="68" fill="#EADDC4"/>
+          <!-- window -->
+          <rect x="38" y="42" width="92" height="84" rx="6" fill="#F9D2C2" stroke="#1E3A2F" stroke-width="5"/>
+          <line x1="84" y1="44" x2="84" y2="124" stroke="#1E3A2F" stroke-width="4"/>
+          <line x1="40" y1="84" x2="128" y2="84" stroke="#1E3A2F" stroke-width="4"/>
+          <circle cx="64" cy="66" r="13" fill="#E8C766"/>
+          <!-- bookshelf -->
+          <rect x="278" y="64" width="92" height="130" rx="4" fill="#8A6B3F"/>
+          <rect x="286" y="74" width="76" height="32" fill="#FBF3E4"/>
+          <rect x="290" y="78" width="10" height="28" fill="#F2705B"/><rect x="303" y="82" width="10" height="24" fill="#C9A227"/>
+          <rect x="316" y="78" width="10" height="28" fill="#4A7263"/><rect x="329" y="84" width="10" height="22" fill="#F9A893"/>
+          <rect x="286" y="116" width="76" height="32" fill="#FBF3E4"/>
+          <rect x="290" y="122" width="10" height="26" fill="#2E5243"/><rect x="303" y="118" width="10" height="30" fill="#E8C766"/>
+          <rect x="316" y="124" width="10" height="24" fill="#F2705B"/><rect x="329" y="120" width="10" height="28" fill="#4A7263"/>
+          <rect x="286" y="158" width="76" height="28" fill="#FBF3E4"/>
+          <rect x="292" y="164" width="26" height="22" rx="3" fill="#F9A893"/><rect x="324" y="164" width="26" height="22" rx="3" fill="#A9C0B2"/>
+          <!-- easel -->
+          <line x1="172" y1="92" x2="150" y2="196" stroke="#8A6B3F" stroke-width="6" stroke-linecap="round"/>
+          <line x1="208" y1="92" x2="230" y2="196" stroke="#8A6B3F" stroke-width="6" stroke-linecap="round"/>
+          <rect x="158" y="86" width="64" height="74" rx="4" fill="#FFFDF8" stroke="#1E3A2F" stroke-width="3"/>
+          <path d="M168 132 q12 -18 22 0 q10 -16 22 0" fill="none" stroke="#F2705B" stroke-width="5" stroke-linecap="round"/>
+          <circle cx="190" cy="106" r="9" fill="#E8C766"/>
+          <!-- rug -->
+          <ellipse cx="180" cy="228" rx="104" ry="24" fill="#F9D2C2"/>
+          <ellipse cx="180" cy="228" rx="72" ry="15" fill="none" stroke="#FBF3E4" stroke-width="4"/>
+          <!-- plant -->
+          <rect x="46" y="168" width="28" height="26" rx="5" fill="#F2705B"/>
+          <path d="M60 168 Q48 144 38 150 Q50 158 58 168 M60 168 Q62 140 76 142 Q70 154 62 168" fill="#4A7263"/>
+          <!-- bird on shelf -->
+          <use href="#bird" x="294" y="32" width="36" height="31.5"/>
+        </svg>
+        <figcaption class="img-tip" role="tooltip"><span class="cam" aria-hidden="true">📷</span>Replace with: classroom interior — bright, tidy, children at activity tables, ~1200×800.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true"><svg viewBox="0 0 240 44"><use href="#birdline"/></svg></div>
+
+  <!-- ============ PROGRAMS ============ -->
+  <section class="programs" id="programs" aria-labelledby="programs-heading">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Programs</p>
+        <h2 id="programs-heading">A classroom for every age and stage.</h2>
+        <p>From first naps to pre-K, one warm hand-off at a time.</p>
+      </div>
+      <div class="prog-grid">
+        <article class="prog-card reveal">
+          <svg class="spot" viewBox="0 0 80 80" aria-hidden="true">
+            <line x1="40" y1="42" x2="40" y2="68" stroke="#8A6B3F" stroke-width="7" stroke-linecap="round"/>
+            <circle cx="40" cy="64" r="6" fill="#C9A227"/>
+            <circle cx="40" cy="28" r="20" fill="#E8C766"/>
+            <path d="M40 18 l2.8 5.7 6.3 .9 -4.6 4.4 1.1 6.2 -5.6 -2.9 -5.6 2.9 1.1 -6.2 -4.6 -4.4 6.3 -.9 Z" fill="#FFFDF8"/>
+          </svg>
+          <h3>Infants</h3><span class="age">6 weeks – 12 months</span>
+          <p>Gentle days on your baby's schedule — naps, snuggles, and caregivers who learn every cue.</p>
+        </article>
+        <article class="prog-card reveal">
+          <svg class="spot" viewBox="0 0 80 80" aria-hidden="true">
+            <path d="M8 52 q0 -18 14 -18 q12 0 13 12 l1 10 q0 6 -6 6 H14 q-6 0 -6 -10 Z" fill="#F2705B"/>
+            <rect x="8" y="56" width="29" height="7" rx="3.5" fill="#FFFDF8"/>
+            <circle cx="20" cy="44" r="2.5" fill="#FFFDF8"/><circle cx="28" cy="44" r="2.5" fill="#FFFDF8"/>
+            <path d="M43 52 q0 -18 14 -18 q12 0 13 12 l1 10 q0 6 -6 6 H49 q-6 0 -6 -10 Z" fill="#4A7263"/>
+            <rect x="43" y="56" width="29" height="7" rx="3.5" fill="#FFFDF8"/>
+            <circle cx="55" cy="44" r="2.5" fill="#FFFDF8"/><circle cx="63" cy="44" r="2.5" fill="#FFFDF8"/>
+          </svg>
+          <h3>Waddlers</h3><span class="age">12 – 18 months</span>
+          <p>For the almost-walkers: soft places to practice and proud applause for every wobbly step.</p>
+        </article>
+        <article class="prog-card reveal">
+          <svg class="spot" viewBox="0 0 80 80" aria-hidden="true">
+            <rect x="24" y="14" width="26" height="26" rx="3" fill="#F2705B"/>
+            <rect x="10" y="40" width="26" height="26" rx="3" fill="#E8C766"/>
+            <rect x="40" y="40" width="26" height="26" rx="3" fill="#4A7263"/>
+            <text x="37" y="33" font-size="16" font-weight="700" fill="#FFFDF8" text-anchor="middle" font-family="Georgia,serif">A</text>
+            <text x="23" y="59" font-size="16" font-weight="700" fill="#8A6B3F" text-anchor="middle" font-family="Georgia,serif">B</text>
+            <text x="53" y="59" font-size="16" font-weight="700" fill="#FFFDF8" text-anchor="middle" font-family="Georgia,serif">C</text>
+          </svg>
+          <h3>Toddlers</h3><span class="age">18 – 24 months</span>
+          <p>Big feelings and busy hands — stacking, splashing, and the daily joy of “I did it myself.”</p>
+        </article>
+        <article class="prog-card reveal">
+          <svg class="spot" viewBox="0 0 80 80" aria-hidden="true">
+            <g transform="rotate(-14 40 40)">
+              <rect x="20" y="22" width="11" height="40" rx="3" fill="#F2705B"/><polygon points="20,22 31,22 25.5,12" fill="#D85A44"/>
+              <rect x="35" y="22" width="11" height="40" rx="3" fill="#C9A227"/><polygon points="35,22 46,22 40.5,12" fill="#8A6B3F"/>
+              <rect x="50" y="22" width="11" height="40" rx="3" fill="#4A7263"/><polygon points="50,22 61,22 55.5,12" fill="#2E5243"/>
+            </g>
+          </svg>
+          <h3>Twos</h3><span class="age">2 – 3 years</span>
+          <p>Words arrive by the dozen this year. We keep up — with songs, stories, and patient listening.</p>
+        </article>
+        <article class="prog-card reveal">
+          <svg class="spot" viewBox="0 0 80 80" aria-hidden="true">
+            <path d="M18 36 h28 l-3 28 h-22 Z" fill="#4A7263"/>
+            <path d="M46 40 L62 30 L64 35 L49 44 Z" fill="#4A7263"/>
+            <circle cx="63" cy="32" r="5" fill="#C9A227"/>
+            <path d="M18 44 q-8 2 -8 12 q0 8 8 8" fill="none" stroke="#2E5243" stroke-width="4"/>
+            <path d="M30 36 q-2 -12 8 -16 M30 36 q2 -10 -6 -14" fill="none" stroke="#7FA08F" stroke-width="4" stroke-linecap="round"/>
+            <circle cx="38" cy="18" r="4" fill="#F2705B"/>
+          </svg>
+          <h3>Threes</h3><span class="age">3 – 4 years</span>
+          <p>Friendship season: sharing, pretend play, and learning to be good company at the sand table.</p>
+        </article>
+        <article class="prog-card reveal">
+          <svg class="spot" viewBox="0 0 80 80" aria-hidden="true">
+            <path d="M40 24 Q26 14 12 18 V58 Q26 54 40 62 Z" fill="#FFFDF8" stroke="#1E3A2F" stroke-width="3"/>
+            <path d="M40 24 Q54 14 68 18 V58 Q54 54 40 62 Z" fill="#FBF3E4" stroke="#1E3A2F" stroke-width="3"/>
+            <path d="M18 28 q11 -3 17 1 M18 38 q11 -3 17 1 M45 29 q11 -4 17 -1 M45 39 q11 -4 17 -1" fill="none" stroke="#A9C0B2" stroke-width="3" stroke-linecap="round"/>
+            <rect x="36" y="14" width="8" height="20" rx="2" fill="#F2705B"/>
+          </svg>
+          <h3>Preschool</h3><span class="age">3 – 4 years</span>
+          <p>Letters, numbers, and questions all day long. Here, curiosity is the curriculum.</p>
+        </article>
+        <article class="prog-card reveal">
+          <svg class="spot" viewBox="0 0 80 80" aria-hidden="true">
+            <rect x="18" y="22" width="44" height="46" rx="12" fill="#F2705B"/>
+            <rect x="26" y="44" width="28" height="20" rx="6" fill="#FBE3D8"/>
+            <rect x="36" y="50" width="8" height="8" rx="2" fill="#C9A227"/>
+            <path d="M28 24 q12 -14 24 0" fill="none" stroke="#1E3A2F" stroke-width="5" stroke-linecap="round"/>
+            <line x1="26" y1="30" x2="26" y2="64" stroke="#1E3A2F" stroke-width="4" stroke-linecap="round"/>
+            <line x1="54" y1="30" x2="54" y2="64" stroke="#1E3A2F" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+          <h3>Pre-K Readiness</h3><span class="age">4 – 5 years</span>
+          <p>Everything kindergarten will ask of them, practiced gently until it feels easy.</p>
+        </article>
+        <article class="prog-card reveal">
+          <svg class="spot" viewBox="0 0 80 80" aria-hidden="true">
+            <path d="M10 64 Q40 54 70 64 L70 70 L10 70 Z" fill="#EADDC4"/>
+            <path d="M22 58 l6 -22 h14 l6 22 Z" fill="#C9A227"/>
+            <path d="M28 36 q12 -8 20 0" fill="none" stroke="#8A6B3F" stroke-width="4"/>
+            <g transform="rotate(24 58 44)">
+              <rect x="55" y="22" width="6" height="26" rx="3" fill="#8A6B3F"/>
+              <path d="M50 48 h16 l-2 14 h-12 Z" fill="#F2705B"/>
+            </g>
+            <circle cx="18" cy="24" r="9" fill="#E8C766"/>
+          </svg>
+          <h3>Outdoor Classrooms</h3><span class="age">Every age</span>
+          <p>Gardens, bug hunts, and mud-pie mastery. Some lessons need grass-stained knees.</p>
+        </article>
+      </div>
+      <p class="prog-more reveal"><a href="/programs/">Explore all programs in detail →</a></p>
+    </div>
+  </section>
+
+  <!-- ============ OUTDOOR BAND ============ -->
+  <section aria-labelledby="outdoor-heading">
+    <div class="container split">
+      <!-- IMAGE SLOT: Outdoor classroom -->
+      <figure class="img-slot reveal" tabindex="0">
+        <svg class="scene" viewBox="0 0 400 300" role="img" aria-label="Illustration of an outdoor classroom with a big tree, bunting, raised garden beds, and a watering can">
+          <rect width="400" height="300" fill="#F6EDDC"/>
+          <use href="#sun" x="306" y="20" width="64" height="64"/>
+          <path d="M0 224 Q200 200 400 228 L400 300 L0 300 Z" fill="#8FB3A0"/>
+          <!-- brand dot-foliage tree -->
+          <path d="M58 236 q-6 -60 -10 -96 q14 30 16 96 Z" fill="#8A6B3F"/>
+          <circle cx="50" cy="92" r="20" fill="#F2705B"/>
+          <circle cx="86" cy="114" r="15" fill="#E8C766"/>
+          <circle cx="20" cy="120" r="13" fill="#E8C766"/>
+          <circle cx="66" cy="130" r="11" fill="#F2705B"/>
+          <circle cx="38" cy="136" r="10" fill="#E8C766"/>
+          <circle cx="96" cy="140" r="8" fill="#F2705B"/>
+          <circle cx="22" cy="92" r="5" fill="#E8C766"/>
+          <circle cx="80" cy="82" r="5" fill="#F2705B"/>
+          <circle cx="106" cy="112" r="4" fill="#E8C766"/>
+          <circle cx="44" cy="68" r="4" fill="#F2705B"/>
+          <circle cx="8" cy="142" r="4" fill="#F2705B"/>
+          <!-- bunting to pole -->
+          <line x1="318" y1="92" x2="318" y2="236" stroke="#8A6B3F" stroke-width="6" stroke-linecap="round"/>
+          <path d="M96 96 Q210 132 316 94" fill="none" stroke="#1E3A2F" stroke-width="2.5"/>
+          <polygon points="130,107 144,109 136,124" fill="#F2705B"/>
+          <polygon points="170,114 184,115 176,130" fill="#C9A227"/>
+          <polygon points="212,117 226,117 219,132" fill="#F2705B"/>
+          <polygon points="254,113 268,112 261,127" fill="#C9A227"/>
+          <polygon points="290,105 304,103 298,118" fill="#F2705B"/>
+          <!-- garden beds -->
+          <rect x="124" y="206" width="104" height="40" rx="5" fill="#8A6B3F"/>
+          <rect x="132" y="212" width="88" height="14" rx="3" fill="#6B5424"/>
+          <path d="M148 212 q-2 -14 8 -18 M148 212 q4 -10 -4 -16 M178 212 q-2 -14 8 -18 M206 212 q-2 -12 6 -16" fill="none" stroke="#4A7263" stroke-width="4" stroke-linecap="round"/>
+          <rect x="248" y="216" width="92" height="36" rx="5" fill="#8A6B3F"/>
+          <rect x="256" y="222" width="76" height="12" rx="3" fill="#6B5424"/>
+          <circle cx="272" cy="216" r="6" fill="#F2705B"/><circle cx="296" cy="212" r="6" fill="#E8C766"/><circle cx="318" cy="216" r="6" fill="#F2705B"/>
+          <!-- watering can -->
+          <path d="M84 252 h34 l-3 26 h-28 Z" fill="#4A7263"/>
+          <path d="M118 258 L136 248 L139 254 L121 264 Z" fill="#4A7263"/>
+          <circle cx="138" cy="250" r="5.5" fill="#C9A227"/>
+          <path d="M84 260 q-9 3 -9 11 q0 8 9 9" fill="none" stroke="#2E5243" stroke-width="4"/>
+          <!-- butterfly -->
+          <circle cx="232" cy="166" r="3" fill="#2B2B2B"/>
+          <path d="M232 166 q-12 -12 -16 0 q8 8 16 0 M232 166 q12 -12 16 0 q-8 8 -16 0" fill="#F2705B"/>
+          <!-- bird on garden bed -->
+          <use href="#bird" x="174" y="172" width="40" height="35"/>
+        </svg>
+        <figcaption class="img-tip" role="tooltip"><span class="cam" aria-hidden="true">📷</span>Replace with: outdoor classroom in use — garden beds, mud kitchen, ~1200×800, midday.</figcaption>
+      </figure>
+      <div class="reveal">
+        <p class="eyebrow">Outdoor classrooms</p>
+        <h2 id="outdoor-heading" style="font-size:clamp(1.85rem,3.6vw,2.6rem);margin-bottom:1rem">Some lessons need sky.</h2>
+        <p style="margin-bottom:1rem">Gardens to water, worms to meet, mud pies to perfect. Our outdoor classrooms get the same care and intention as the indoor ones — because a child who spends the morning digging comes inside ready to listen, wonder, and nap like a champion.</p>
+        <p><a href="/programs/">See how outdoor learning works at every age →</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LOCATIONS ============ -->
+  <section id="locations" aria-labelledby="locations-heading" style="background:var(--cream-deep)">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Find your school</p>
+        <h2 id="locations-heading">Three nests around Charlottesville.</h2>
+        <p>Each school is its own neighborhood family — same heart, same standards, different front door.</p>
+        <svg class="threebirds" viewBox="0 0 196 60" aria-hidden="true">
+          <use href="#bird" x="0" y="0" width="64" height="56"/>
+          <use href="#bird" x="86" y="22" width="42" height="37" style="--bird-body:var(--gold)"/>
+          <g transform="translate(196,0) scale(-1,1)"><use href="#bird" x="0" y="20" width="44" height="38.5" style="--bird-body:var(--pine-mist)"/></g>
+        </svg>
+      </div>
+      <div class="loc-grid">
+
+        <article class="loc-card reveal">
+          <!-- IMAGE SLOT: Crozet exterior -->
+          <figure class="img-slot" tabindex="0">
+            <svg class="scene" viewBox="0 0 400 260" role="img" aria-label="Illustration of the Crozet schoolhouse with the Blue Ridge mountains behind it and a bird perched on the roof">
+              <rect width="400" height="260" fill="#F6EDDC"/>
+              <use href="#sun" x="310" y="22" width="58" height="58"/>
+              <polygon points="-20,196 110,76 240,196" fill="#A9C0B2"/>
+              <polygon points="120,196 250,96 390,196" fill="#7FA08F"/>
+              <path d="M0 192 Q200 172 400 196 L400 260 L0 260 Z" fill="#8FB3A0"/>
+              <rect x="148" y="118" width="112" height="80" rx="3" fill="#FFF9EE"/>
+              <polygon points="136,120 272,120 204,68" fill="#1E3A2F"/>
+              <rect x="196" y="54" width="16" height="22" fill="#1E3A2F"/>
+              <polygon points="192,56 216,56 204,42" fill="#2E5243"/>
+              <circle cx="204" cy="64" r="5" fill="#C9A227"/>
+              <rect x="190" y="156" width="28" height="42" rx="9" fill="#F2705B"/>
+              <rect x="158" y="136" width="22" height="22" rx="2" fill="#E8C766" stroke="#1E3A2F" stroke-width="3"/>
+              <rect x="228" y="136" width="22" height="22" rx="2" fill="#E8C766" stroke="#1E3A2F" stroke-width="3"/>
+              <rect x="34" y="172" width="9" height="30" fill="#8A6B3F"/>
+              <circle cx="38" cy="150" r="11" fill="#F2705B"/>
+              <circle cx="24" cy="162" r="8" fill="#E8C766"/>
+              <circle cx="52" cy="162" r="8" fill="#E8C766"/>
+              <circle cx="38" cy="172" r="6" fill="#F2705B"/>
+              <circle cx="18" cy="146" r="3.5" fill="#E8C766"/>
+              <circle cx="57" cy="144" r="3.5" fill="#F2705B"/>
+              <rect x="318" y="168" width="9" height="32" fill="#8A6B3F"/>
+              <circle cx="322" cy="146" r="12" fill="#E8C766"/>
+              <circle cx="307" cy="158" r="8.5" fill="#F2705B"/>
+              <circle cx="337" cy="158" r="8.5" fill="#F2705B"/>
+              <circle cx="322" cy="168" r="6.5" fill="#E8C766"/>
+              <circle cx="300" cy="142" r="3.5" fill="#F2705B"/>
+              <circle cx="344" cy="140" r="3.5" fill="#E8C766"/>
+              <circle cx="120" cy="222" r="5" fill="#F2705B"/><circle cx="300" cy="228" r="5" fill="#E8C766"/>
+              <use href="#bird" x="216" y="78" width="40" height="35"/>
+            </svg>
+            <figcaption class="img-tip" role="tooltip"><span class="cam" aria-hidden="true">📷</span>Replace with: Crozet exterior photo — landscape, ~1024×683, warm daylight.</figcaption>
+          </figure>
+          <div class="loc-body">
+            <svg class="loc-nest" viewBox="0 0 140 44" aria-hidden="true"><use href="#nest"/></svg>
+            <h3>Crozet</h3>
+            <address>
+              <div class="addr-lines">1645 Park Ridge Drive<br>Crozet, VA 22932</div>
+              <a href="tel:+14344855557">(434) 485-5557</a><br>
+              <a href="mailto:crozet@brightbeginningsva.com">crozet@brightbeginningsva.com</a>
+            </address>
+          </div>
+        </article>
+
+        <article class="loc-card reveal">
+          <!-- IMAGE SLOT: Forest Lakes exterior -->
+          <figure class="img-slot" tabindex="0">
+            <svg class="scene" viewBox="0 0 400 260" role="img" aria-label="Illustration of the Forest Lakes schoolhouse beside a small lake ringed with pine trees">
+              <rect width="400" height="260" fill="#F6EDDC"/>
+              <use href="#sun" x="34" y="24" width="58" height="58"/>
+              <path d="M0 188 Q200 170 400 192 L400 260 L0 260 Z" fill="#8FB3A0"/>
+              <rect x="172" y="112" width="112" height="80" rx="3" fill="#FFF9EE"/>
+              <polygon points="160,114 296,114 228,62" fill="#1E3A2F"/>
+              <rect x="220" y="48" width="16" height="22" fill="#1E3A2F"/>
+              <polygon points="216,50 240,50 228,36" fill="#2E5243"/>
+              <circle cx="228" cy="58" r="5" fill="#C9A227"/>
+              <rect x="214" y="150" width="28" height="42" rx="9" fill="#F2705B"/>
+              <rect x="182" y="130" width="22" height="22" rx="2" fill="#E8C766" stroke="#1E3A2F" stroke-width="3"/>
+              <rect x="252" y="130" width="22" height="22" rx="2" fill="#E8C766" stroke="#1E3A2F" stroke-width="3"/>
+              <!-- pines -->
+              <polygon points="320,118 348,168 292,168" fill="#2E5243"/>
+              <polygon points="320,96 344,140 296,140" fill="#2E5243"/>
+              <rect x="315" y="168" width="10" height="22" fill="#8A6B3F"/>
+              <polygon points="368,138 390,178 346,178" fill="#4A7263"/>
+              <rect x="364" y="178" width="8" height="16" fill="#8A6B3F"/>
+              <!-- lake -->
+              <ellipse cx="92" cy="218" rx="84" ry="26" fill="#6E9483"/>
+              <path d="M48 214 q12 6 24 0 M86 226 q12 6 24 0 M64 234 q10 5 20 0" fill="none" stroke="#F6EDDC" stroke-width="3" stroke-linecap="round"/>
+              <path d="M120 84 q9 -11 18 0 q9 -11 18 0" fill="none" stroke="#2E5243" stroke-width="3.5" stroke-linecap="round"/>
+              <use href="#bird" x="108" y="166" width="40" height="35"/>
+            </svg>
+            <figcaption class="img-tip" role="tooltip"><span class="cam" aria-hidden="true">📷</span>Replace with: Forest Lakes exterior photo — landscape, ~1024×683, warm daylight.</figcaption>
+          </figure>
+          <div class="loc-body">
+            <svg class="loc-nest" viewBox="0 0 140 44" aria-hidden="true"><use href="#nest"/></svg>
+            <h3>Forest Lakes</h3>
+            <address>
+              <div class="addr-lines">1610 Regent Street<br>Charlottesville, VA 22911</div>
+              <a href="tel:+14344044331">(434) 404-4331</a><br>
+              <a href="mailto:forestlakes@brightbeginningsva.com">forestlakes@brightbeginningsva.com</a>
+            </address>
+          </div>
+        </article>
+
+        <article class="loc-card reveal">
+          <!-- IMAGE SLOT: Mill Creek exterior -->
+          <figure class="img-slot" tabindex="0">
+            <svg class="scene" viewBox="0 0 400 260" role="img" aria-label="Illustration of the Mill Creek schoolhouse with a water wheel and a winding creek">
+              <rect width="400" height="260" fill="#F6EDDC"/>
+              <use href="#sun" x="316" y="26" width="58" height="58"/>
+              <path d="M0 186 Q200 168 400 190 L400 260 L0 260 Z" fill="#8FB3A0"/>
+              <rect x="162" y="108" width="112" height="80" rx="3" fill="#FFF9EE"/>
+              <polygon points="150,110 286,110 218,58" fill="#1E3A2F"/>
+              <rect x="210" y="44" width="16" height="22" fill="#1E3A2F"/>
+              <polygon points="206,46 230,46 218,32" fill="#2E5243"/>
+              <circle cx="218" cy="54" r="5" fill="#C9A227"/>
+              <rect x="204" y="146" width="28" height="42" rx="9" fill="#F2705B"/>
+              <rect x="172" y="126" width="22" height="22" rx="2" fill="#E8C766" stroke="#1E3A2F" stroke-width="3"/>
+              <rect x="242" y="126" width="22" height="22" rx="2" fill="#E8C766" stroke="#1E3A2F" stroke-width="3"/>
+              <!-- water wheel -->
+              <circle cx="138" cy="160" r="30" fill="none" stroke="#8A6B3F" stroke-width="7"/>
+              <circle cx="138" cy="160" r="6" fill="#C9A227"/>
+              <path d="M138 132 V188 M110 160 H166 M118 140 L158 180 M158 140 L118 180" stroke="#8A6B3F" stroke-width="4"/>
+              <!-- creek -->
+              <path d="M0 226 Q100 206 200 226 T400 224 L400 246 Q300 230 200 246 T0 248 Z" fill="#6E9483"/>
+              <path d="M52 230 q12 6 24 0 M160 234 q12 6 24 0 M280 228 q12 6 24 0" fill="none" stroke="#F6EDDC" stroke-width="3" stroke-linecap="round"/>
+              <rect x="330" y="158" width="9" height="32" fill="#8A6B3F"/>
+              <circle cx="334" cy="136" r="12" fill="#F2705B"/>
+              <circle cx="319" cy="148" r="8.5" fill="#E8C766"/>
+              <circle cx="349" cy="148" r="8.5" fill="#E8C766"/>
+              <circle cx="334" cy="158" r="6.5" fill="#F2705B"/>
+              <circle cx="312" cy="132" r="3.5" fill="#E8C766"/>
+              <circle cx="356" cy="130" r="3.5" fill="#F2705B"/>
+              <use href="#bird" x="118" y="98" width="40" height="35"/>
+            </svg>
+            <figcaption class="img-tip" role="tooltip"><span class="cam" aria-hidden="true">📷</span>Replace with: Mill Creek exterior photo — landscape, ~1024×683, warm daylight.</figcaption>
+          </figure>
+          <div class="loc-body">
+            <svg class="loc-nest" viewBox="0 0 140 44" aria-hidden="true"><use href="#nest"/></svg>
+            <h3>Mill Creek</h3>
+            <address>
+              <div class="addr-lines">1221 Stoney Ridge Rd<br>Charlottesville, VA 22902</div>
+              <a href="tel:+14344435554">(434) 443-5554</a><br>
+              <a href="mailto:millcreek@brightbeginningsva.com">millcreek@brightbeginningsva.com</a>
+            </address>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="testimonials" aria-labelledby="testimonials-heading">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">From our families</p>
+        <h2 id="testimonials-heading">Don't take our word for it.</h2>
+        <p>Take theirs — some of them have been saying it for a decade.</p>
+      </div>
+      <div class="quote-grid">
+        <blockquote class="quote-card reveal">
+          <svg class="wingmark" viewBox="0 0 48 28" aria-hidden="true"><use href="#wingmark"/></svg>
+          <p>The teachers here don't feel like staff — they feel like family. Our daughter runs through the door every single morning.</p>
+          <footer>The Moore Family</footer>
+        </blockquote>
+        <blockquote class="quote-card reveal">
+          <svg class="wingmark" viewBox="0 0 48 28" aria-hidden="true"><use href="#wingmark"/></svg>
+          <p>Three kids, ten years, one school. Every classroom, every year, has felt like home.</p>
+          <footer>Tabitha Johnson</footer>
+        </blockquote>
+        <blockquote class="quote-card reveal">
+          <svg class="wingmark" viewBox="0 0 48 28" aria-hidden="true"><use href="#wingmark"/></svg>
+          <p>They knew my son's quirks within a week — and loved him for every one of them. That's when I knew we'd found our place.</p>
+          <footer>Kathy Sletten</footer>
+        </blockquote>
+        <blockquote class="quote-card reveal">
+          <svg class="wingmark" viewBox="0 0 48 28" aria-hidden="true"><use href="#wingmark"/></svg>
+          <p>We toured everywhere in Charlottesville. Nowhere else came close to feeling like this.</p>
+          <footer>Laura &amp; Philip Smith</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true"><svg viewBox="0 0 240 44"><use href="#birdline"/></svg></div>
+
+  <!-- ============ HAPPY FAMILY GUARANTEE ============ -->
+  <section class="guarantee" aria-labelledby="guarantee-heading">
+    <div class="container split">
+      <div class="reveal">
+        <svg class="guar-badge" viewBox="0 0 64 84" aria-hidden="true"><use href="#award"/></svg>
+        <p class="eyebrow">Our promise, in writing</p>
+        <h2 id="guarantee-heading">The Happy Family Guarantee</h2>
+        <p>Choosing a preschool is a leap of faith, so we make it a safe one. If your family isn't completely happy in your first weeks with us, we'll make it right — that's not a slogan, it's a written guarantee we've stood behind for years.</p>
+        <p class="guar-link"><a href="/our-happy-family-guarantee/">Read the Happy Family Guarantee →</a></p>
+      </div>
+
+      <!-- IMAGE SLOT: Teacher with children -->
+      <figure class="img-slot reveal" tabindex="0">
+        <svg class="scene" viewBox="0 0 400 260" role="img" aria-label="Illustration of a teacher reading a picture book to two children seated on a rug">
+          <rect width="400" height="260" fill="#FBF3E4"/>
+          <ellipse cx="200" cy="218" rx="160" ry="32" fill="#F9D2C2"/>
+          <ellipse cx="200" cy="218" rx="116" ry="21" fill="none" stroke="#FBF3E4" stroke-width="4"/>
+          <!-- teacher -->
+          <path d="M168 196 q0 -52 36 -52 q36 0 36 52 Z" fill="#1E3A2F"/>
+          <circle cx="204" cy="124" r="24" fill="#F2D5B5"/>
+          <path d="M180 120 q0 -24 24 -24 q24 0 24 24 q-10 -12 -24 -12 q-14 0 -24 12 Z" fill="#8A6B3F"/>
+          <circle cx="196" cy="124" r="2.4" fill="#2B2B2B"/><circle cx="212" cy="124" r="2.4" fill="#2B2B2B"/>
+          <path d="M198 134 q6 5 12 0" fill="none" stroke="#2B2B2B" stroke-width="2" stroke-linecap="round"/>
+          <!-- open book -->
+          <path d="M204 178 Q186 168 166 172 V196 Q186 192 204 200 Z" fill="#FFFDF8" stroke="#1E3A2F" stroke-width="3"/>
+          <path d="M204 178 Q222 168 242 172 V196 Q222 192 204 200 Z" fill="#FBE3D8" stroke="#1E3A2F" stroke-width="3"/>
+          <!-- child 1 -->
+          <path d="M96 218 q0 -34 26 -34 q26 0 26 34 Z" fill="#F2705B"/>
+          <circle cx="122" cy="172" r="17" fill="#F2D5B5"/>
+          <path d="M105 168 q2 -16 17 -16 q15 0 17 16 q-8 -8 -17 -8 q-9 0 -17 8 Z" fill="#5C4426"/>
+          <circle cx="116" cy="172" r="2" fill="#2B2B2B"/><circle cx="128" cy="172" r="2" fill="#2B2B2B"/>
+          <path d="M117 180 q5 4 10 0" fill="none" stroke="#2B2B2B" stroke-width="2" stroke-linecap="round"/>
+          <!-- child 2 -->
+          <path d="M254 218 q0 -34 26 -34 q26 0 26 34 Z" fill="#C9A227"/>
+          <circle cx="280" cy="172" r="17" fill="#E9C29B"/>
+          <path d="M263 168 q2 -16 17 -16 q15 0 17 16 q-8 -8 -17 -8 q-9 0 -17 8 Z" fill="#2B2B2B"/>
+          <circle cx="274" cy="172" r="2" fill="#2B2B2B"/><circle cx="286" cy="172" r="2" fill="#2B2B2B"/>
+          <path d="M275 180 q5 4 10 0" fill="none" stroke="#2B2B2B" stroke-width="2" stroke-linecap="round"/>
+          <!-- bird watching from corner -->
+          <use href="#bird" x="332" y="58" width="42" height="37"/>
+          <line x1="316" y1="98" x2="392" y2="98" stroke="#8A6B3F" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+        <figcaption class="img-tip" role="tooltip"><span class="cam" aria-hidden="true">📷</span>Replace with: teacher-with-children moment — candid story time, ~1000×750, natural light.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA ============ -->
+  <section class="final-cta on-pine" aria-labelledby="cta-heading">
+    <div class="container reveal">
+      <svg class="estbird" viewBox="0 0 136 110" aria-hidden="true">
+        <use href="#bird" x="28" y="0" width="64" height="56"/>
+        <line x1="88" y1="25" x2="42" y2="76" stroke="rgba(250,246,239,.85)" stroke-width="1.5"/>
+        <line x1="88" y1="25" x2="101" y2="76" stroke="rgba(250,246,239,.85)" stroke-width="1.5"/>
+        <rect x="32" y="76" width="79" height="27" rx="4" fill="var(--pine)" stroke="var(--cream)" stroke-width="2"/>
+        <text x="71.5" y="95" text-anchor="middle" font-family="Nunito Sans,sans-serif" font-size="13" font-weight="700" letter-spacing="2.5" fill="var(--cream)">EST. 1984</text>
+      </svg>
+      <h2 id="cta-heading">Come tour our schools.</h2>
+      <p>Pick a morning. See the classrooms, meet the teachers, watch a day unfold. Twenty minutes here will tell you more than twenty open browser tabs.</p>
+      <div class="cta-row">
+        <a class="btn btn-coral" href="https://brightbeginnings.iks.center/webform/1183842434473334550">Schedule a Tour</a>
+        <a class="btn btn-ghost on-dark" href="#locations">Find your nearest school</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer on-pine">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="wordmark" href="/">
+          <img class="logo-img logo-img-footer" src="assets/bb-logo-white.png" alt="Bright Beginnings Preschool — Est. 1984">
+        </a>
+        <p>Family-owned and Charlottesville-grown since 1984. Three schools, one big family.</p>
+        <ul class="social" aria-label="Social media">
+          <li><a href="https://www.facebook.com/brightbeginningsva" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.7c0-.9.3-1.6 1.6-1.6h1.7V4.2c-.3 0-1.3-.2-2.5-.2-2.5 0-4.2 1.5-4.2 4.3v2.5H7.4V14h2.7v8h3.4Z"/></svg></a></li>
+          <li><a href="https://www.instagram.com/brightbeginningsva" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4.3c2.5 0 2.8 0 3.8.1 2.5.1 3.7 1.3 3.8 3.8 0 1 .1 1.3.1 3.8s0 2.8-.1 3.8c-.1 2.5-1.3 3.7-3.8 3.8-1 0-1.3.1-3.8.1s-2.8 0-3.8-.1c-2.5-.1-3.7-1.3-3.8-3.8 0-1-.1-1.3-.1-3.8s0-2.8.1-3.8c.1-2.5 1.3-3.7 3.8-3.8 1-.1 1.3-.1 3.8-.1ZM12 2.4c-2.6 0-2.9 0-3.9.1C4.7 2.6 2.6 4.6 2.5 8c-.1 1-.1 1.4-.1 4s0 2.9.1 4c.1 3.4 2.2 5.4 5.6 5.6 1 0 1.3.1 3.9.1s2.9 0 3.9-.1c3.4-.2 5.5-2.2 5.6-5.6.1-1 .1-1.4.1-4s0-2.9-.1-4c-.1-3.4-2.2-5.4-5.6-5.6-1-.1-1.3-.1-3.9-.1Zm0 4.7a4.9 4.9 0 1 0 0 9.8 4.9 4.9 0 0 0 0-9.8Zm0 8.1a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4Zm5.1-9.4a1.1 1.1 0 1 0 0 2.3 1.1 1.1 0 0 0 0-2.3Z"/></svg></a></li>
+          <li><a href="https://www.youtube.com/@brightbeginningsva" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8c1.6.4 7.8.4 7.8.4s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8ZM10 15.2V8.8l5.2 3.2-5.2 3.2Z"/></svg></a></li>
+          <li><a href="https://www.pinterest.com/brightbeginningsva" aria-label="Pinterest"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.6 19.3c-.1-.8-.2-2 0-2.9l1.3-5.4s-.3-.6-.3-1.6c0-1.5.9-2.6 2-2.6.9 0 1.4.7 1.4 1.5 0 .9-.6 2.3-.9 3.6-.3 1.1.5 2 1.6 2 1.9 0 3.4-2 3.4-5 0-2.6-1.9-4.4-4.6-4.4a4.8 4.8 0 0 0-5 4.8c0 1 .4 2 .8 2.5a.3.3 0 0 1 .1.3l-.3 1.3c-.1.2-.2.3-.4.2-1.5-.7-2.4-2.9-2.4-4.6 0-3.8 2.8-7.3 8-7.3 4.2 0 7.4 3 7.4 7 0 4.2-2.6 7.5-6.3 7.5-1.2 0-2.4-.6-2.8-1.4l-.7 2.9c-.3 1-1 2.3-1.5 3.1A10 10 0 1 0 12 2Z"/></svg></a></li>
+        </ul>
+      </div>
+      <div class="footer-loc">
+        <h3>Crozet</h3>
+        <address>1645 Park Ridge Drive<br>Crozet, VA 22932<br><a href="tel:+14344855557">(434) 485-5557</a><br><a href="mailto:crozet@brightbeginningsva.com">crozet@​brightbeginningsva.com</a></address>
+      </div>
+      <div class="footer-loc">
+        <h3>Forest Lakes</h3>
+        <address>1610 Regent Street<br>Charlottesville, VA 22911<br><a href="tel:+14344044331">(434) 404-4331</a><br><a href="mailto:forestlakes@brightbeginningsva.com">forestlakes@​brightbeginningsva.com</a></address>
+      </div>
+      <div class="footer-loc">
+        <h3>Mill Creek</h3>
+        <address>1221 Stoney Ridge Rd<br>Charlottesville, VA 22902<br><a href="tel:+14344435554">(434) 443-5554</a><br><a href="mailto:millcreek@brightbeginningsva.com">millcreek@​brightbeginningsva.com</a></address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Bright Beginnings Preschool. All rights reserved.</p>
+      <p><a href="/privacy-policy/">Privacy Policy</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+
+// Mobile nav
+const navBtn = document.querySelector('.nav-toggle');
+const nav = document.getElementById('site-nav');
+navBtn.addEventListener('click', () => {
+  const open = document.body.classList.toggle('nav-open');
+  navBtn.setAttribute('aria-expanded', String(open));
+  navBtn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+});
+nav.addEventListener('click', (e) => {
+  if (e.target.closest('a')) {
+    document.body.classList.remove('nav-open');
+    navBtn.setAttribute('aria-expanded', 'false');
+  }
+});
+
+// Scroll reveal (200ms fade-up; skipped under reduced motion)
+const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const reveals = document.querySelectorAll('.reveal');
+if (reduced || !('IntersectionObserver' in window)) {
+  reveals.forEach(el => el.classList.add('in'));
+} else {
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px' });
+  reveals.forEach(el => io.observe(el));
+}
+
+// Image-slot tooltips: tap toggles on touch devices; Escape closes
+const slots = document.querySelectorAll('.img-slot');
+slots.forEach(slot => {
+  slot.addEventListener('click', () => {
+    if (window.matchMedia('(hover: hover)').matches) return;
+    const wasOpen = slot.classList.contains('tip-open');
+    slots.forEach(s => s.classList.remove('tip-open'));
+    if (!wasOpen) slot.classList.add('tip-open');
+  });
+  slot.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      slot.classList.remove('tip-open');
+      slot.blur();
+    }
+  });
+});
+document.addEventListener('click', (e) => {
+  if (!e.target.closest('.img-slot')) slots.forEach(s => s.classList.remove('tip-open'));
+});
+</script>
+</body>
+</html>
