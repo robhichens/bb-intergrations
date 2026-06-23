@@ -49,6 +49,7 @@ exports.handler = async (event) => {
   const lastName  = pick(incoming, ["last_name", "lastName", "Last name"]);
   const email     = pick(incoming, ["email", "Email"]);
   const phone     = pick(incoming, ["phone", "phone_number", "Phone", "Phone number"]);
+  const phoneCleaned = phone ? phone.replace(/^\+1/, "") : "";
   const childAge  = pick(incoming, ["child_age", "How old is your little one?", "childs_age", "age"]);
   const startWhen = pick(incoming, ["start_when", "When are you hoping to start?", "start_date"]);
 
@@ -73,7 +74,7 @@ exports.handler = async (event) => {
     last_name: lastName || "",
     email: email || "",
     email_consents: "all",
-    phone: phone || "",
+    phone: phoneCleaned || "",
     phone_consents: "all",
     utm_source: "facebook",
     utm_medium: "paid_social",
