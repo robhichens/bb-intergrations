@@ -101,6 +101,7 @@ exports.handler = async (event) => {
       return json(502, { error: "IKS rejected the lead.", iks_status: res.status, iks_response: text });
     }
 
+    console.log("Payload sent to IKS:", JSON.stringify(payload));
     console.log("Lead forwarded to IKS:", email || phone, "| IKS response:", text);
     return json(200, { status: "forwarded", iks_response: safeParse(text) });
   } catch (err) {
